@@ -76,6 +76,22 @@ form.example button:hover {
 .nav a.active {
   border-bottom: 3px solid tan;
 }
+.heading {
+  font-size: 50px;
+  font-family: Garamond;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% { color: white; }
+  50% { color: grey; }
+  100% { color: white; }
+}
+.outline-glow {
+  font-size: 48px;
+  color: #FF7F50;
+  -webkit-text-stroke: 2px rgb(210, 180, 140);
+  text-shadow: 0 0 3px rgb(210, 180, 140);
 </style>
 </head>
 <body>
@@ -85,10 +101,10 @@ form.example button:hover {
   <a href="#contact">Contact</a>
   <a href="#about">About Us</a>
 </div>
-<div class = "center">
+<div class = "center heading outline-glow">
 <?php
 
-   echo "<font size='50' face='Georgia' color='ffffff'><br><br><br>HELLO WORLD <br><br><font size ='5'> Work in progress";
+   echo "<br><br><br>HELLO WORLD <br><br><font size ='5'> Work in progress";
  
 
 ?>
